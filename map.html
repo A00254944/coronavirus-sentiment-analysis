@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Map head -->
+		<link rel="stylesheet" href="map.css">
+		<script type="module" src="map.js"></script>
+		
+		<!-- Mapbox Map head -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+		<!-- Title -->
+		<title>COVID-19 Sentiment Analysis</title>
+		<link rel="icon" href="./images/covid_icon.png">
+	</head>
+
+	<body>
+		<!-- Title Image -->
+		<img src="./images/covid_title.jpg" width="100%" alt="COVID Title">
+
+		<!-- Navigation Bar -->
+		<div class="nav_bar">
+			<a href="./index.html">Welcome</a>
+			<a class="active" href="./map.html">Map</a>
+			<a href="./chart.html">Charts</a>
+		</div>
+
+		<!-- Map Legend -->
+		<h4>Map Legend:</h4>
+		<div><div class='box red'></div>&nbsp;&nbsp;&#60;&nbsp;10 confirmed cases</div>
+		<br>
+		<div><div class='box blue'></div>&nbsp;&nbsp;&#8805;&nbsp;10 confirmed cases</div>
+		<br>
+		<div><div class='box grey'></div>&nbsp;&nbsp;&#8805;&nbsp;100 confirmed cases</div>
+
+		<!-- Map -->
+		<div id='map' width="100%"></div>
+	</body>
+</html>
